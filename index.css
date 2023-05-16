@@ -100,10 +100,26 @@ body {
   }
 
   section {
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 10rem 15% 2rem;
   }
   
+  #resume-link-1{
+    width: 120px;
+    height: 38px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    padding: 7px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgba(0, 0, 0, 0), 0 0 35px rgba(16, 12, 13, 0), 0 0 40px rgba(0, 0, 0, 0), 0 0 50px rgba(12, 12, 12, 0), 0 0 75px rgba(12, 11, 11, 0);
+    animation: glowing 2s ease-in-out alternate infinite;
+  }
 .header {
    position: fixed;
    top: 0;
@@ -115,6 +131,7 @@ body {
    justify-content: space-between;
    align-items: center;
    z-index: 100;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .header.sticky {
   border-bottom: .1rem solid rgba(0, 0, 0, .2);
@@ -126,9 +143,10 @@ body {
   cursor: default;
 }
 #nav-menu a {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   color: var(--text-color);
   margin-left: 3rem;
+text-transform: uppercase;
 } 
 
 
@@ -137,6 +155,7 @@ body {
   display: flex;
  
   background: var(--bg-oxford-blue);
+
 }
 #nav-menu a:hover,
 #nav-menu a.active {
@@ -156,7 +175,8 @@ body {
   align-items: center;
 }
 .home-img img {
-  width: 35vw;
+  width: 40vw;
+
   
   animation: floatImage 4s ease-in-out infinite;
 }
@@ -224,6 +244,21 @@ span {
   .button:hover{
     box-shadow: none;
   }
+  .logo {
+    animation: logoAnimation 2s ease-in-out infinite;
+  }
+  
+  @keyframes logoAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
   
 /*  */
 .hero-bg { display: none; } 
@@ -287,7 +322,7 @@ span {
   }
   .about-content p {
     font-size: 1.9rem;
-    margin: 2rem 0 3rem;
+    margin: 7rem 0 0rem;
     text-align: justify;
   }
   
@@ -585,9 +620,11 @@ span {
 /* github */
 #github-stats {
   margin-bottom: 70px;
+ padding-top: 45px;
 }
 #resume-button-2 {
   list-style: none;
+  
 }
 
 #github-stats {
@@ -683,6 +720,7 @@ span {
       border-top: .1rem solid rgba(0, 0, 0, .2);
       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
       display: none;
+
     }
     #nav-menu.active {
       display: block;
@@ -694,6 +732,7 @@ span {
       display: block;
       font-size: 2rem;
       margin: 3rem 0;
+      padding-left: 10px;
     }
   .home {
     flex-direction: column;

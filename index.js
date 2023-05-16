@@ -8,6 +8,8 @@ menuIcon.onclick = () => {
   navbar.classList.toggle('active')
 };
 
+
+
 // *=============================== github calender ==================================
     GitHubCalendar(".calendar", "debrajj");
 
@@ -87,3 +89,5 @@ const typed = new Typed('.multiple-text', {
 })
 
 
+const logo = document.querySelector('.logo');
+logo.classList.add('animate__animated', 'animate__bounceIn'); // Add animation classes
