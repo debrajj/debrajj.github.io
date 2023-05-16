@@ -76,7 +76,7 @@ ScrollReveal().reveal('.home-content h1', { origin:'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin:'left' });
 
 const homeContent = document.querySelector('.home-content');
-homeContent.style.width = '50%';
+homeContent.style.width = '90%';
 
 // *===============================  typed js==================================
 
