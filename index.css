@@ -161,6 +161,7 @@ section {
   display: none;
 }
 
+
 /*  */
 
 .home {
@@ -236,21 +237,7 @@ span {
 .button:hover {
   box-shadow: none;
 }
-.logo {
-  animation: logoAnimation 2s ease-in-out infinite;
-}
 
-@keyframes logoAnimation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
 /*  */
 .hero-bg {
@@ -306,6 +293,7 @@ span {
 .heading {
   text-align: center;
   font-size: 4.5rem;
+  margin-bottom: 4rem;
 }
 
 .about-content h3 {
@@ -379,6 +367,14 @@ span {
   gap: 2.5rem;
 }
 
+
+
+
+/* .container{
+  min-height: 80vh;
+    padding: 2rem 15% 2rem;
+} */
+
 .project-container .project-card {
   position: relative;
   border-radius: 2rem;
@@ -423,6 +419,7 @@ span {
 .project-layer p {
   font-size: 1.5rem;
   margin: 0.3rem 0 1rem;
+
 }
 .project-layer a {
   display: inline-block;
@@ -436,6 +433,7 @@ span {
 .project-layer a i {
   font-size: 2rem;
   color: var(--bg-oxford-blue-2);
+  margin-top: 12px;
 }
 .projectlinks {
   display: flex;
@@ -498,9 +496,8 @@ span {
   grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
 }
 
-.container {
-  padding-inline: 16px;
-}
+
+
 .tag-btn {
   width: 100%;
   display: flex;
@@ -537,6 +534,7 @@ span {
 .skills-card {
   background-color: var(--bg-oxford-blue);
   border: 1px solid var(--border-prussian-blue);
+  justify-content: center;
 }
 .skills-card-name {
   color: #7d91b0;
@@ -551,6 +549,7 @@ span {
   background: var(--);
   background: var(--bg-oxford-blue);
   text-align: center;
+      padding-top: 4rem;
 }
 
 #contact > div > p {
@@ -610,7 +609,11 @@ span {
 #github-stats {
   margin-bottom: 70px;
   padding-top: 45px;
+  min-height: 80vh;
+  padding: 10rem 15% 2rem;
+
 }
+
 #resume-button-2 {
   list-style: none;
 }
@@ -699,10 +702,12 @@ span {
     left: 0;
     width: 100%;
     padding: 0px;
-    background: var(--bg-oxford-blue);
+    background: hsl(222deg 44% 13% / 88%);
+    /* background: var(--bg-oxford-blue); */
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
+    TEXT-ALIGN: -WEBKIT-CENTER;
   }
   #nav-menu.active {
     display: block;

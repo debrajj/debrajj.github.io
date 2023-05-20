@@ -1,12 +1,34 @@
 // *=============================== toggle icon navbar ==================================
 
+// Select the menu icon and navbar elements
 let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('#nav-menu')
+let navbar = document.querySelector('#nav-menu');
 
-menuIcon.onclick = () => {
+// Add a click event listener to the menu icon
+menuIcon.addEventListener('click', function() {
+  // Toggle the 'bx-x' class on the menu icon
   menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active')
-};
+  
+  // Toggle the 'active' class on the navbar
+  navbar.classList.toggle('active');
+  
+  // Check if the navbar is active
+  if (navbar.classList.contains('active')) {
+    // Apply custom styles when the navbar is active
+    menuIcon.style.color = 'white';
+    navbar.style.backgroundColor = 'hsl(222deg 44% 13% / 88%)';
+    navbar.style.transform = 'translateX(0)';
+    navbar.style.opacity = '1';
+    navbar.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+  } else {
+    // Apply default styles when the navbar is not active
+    menuIcon.style.color = 'black';
+    navbar.style.backgroundColor = 'transparent';
+    navbar.style.transform = 'translateX(-100%)';
+    navbar.style.opacity = '0';
+    navbar.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+  }
+});
 
 
 
@@ -87,7 +109,3 @@ const typed = new Typed('.multiple-text', {
   backdelay: 1000,
   loop: true
 })
-
-
-const logo = document.querySelector('.logo');
-logo.classList.add('animate__animated', 'animate__bounceIn'); // Add animation classes
