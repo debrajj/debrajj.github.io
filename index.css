@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -139,6 +140,11 @@ section {
   color: var(--text-color);
   font-weight: 600;
   cursor: default;
+  font-family: 'Cinzel Decorative', cursive;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--bg-oxford-blue-2); */
+
+
 }
 #nav-menu a {
   font-size: 1.9rem;
@@ -161,6 +167,7 @@ section {
   font-size: 3.6rem;
   color: var(--text-color);
   display: none;
+  color: rgb(255, 255, 255);
 }
 
 
