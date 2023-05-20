@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: var(--fontFamily-noto_sans);
+  font-family: 'Poppins', sans-serif;
   
 }
 html {
@@ -20,6 +21,8 @@ body {
   color: var(--text-color);
   /* color: var(--text-shadow-blue); */
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -140,7 +143,7 @@ section {
   color: var(--text-color);
   font-weight: 600;
   cursor: default;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Ubuntu', sans-serif;
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--bg-oxford-blue-2); */
 
@@ -177,6 +180,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 .home-img img {
   width: 40vw;
@@ -205,7 +209,7 @@ span {
   color: var(--bg-carolina-blue);
 }
 .home-content h1 {
-  font-size: 5.6rem;
+  font-size: 5.8rem;
   font-weight: 700;
   line-height: 1.3;
 }
@@ -546,23 +550,20 @@ span {
   justify-content: center;
 }
 .skills-card-name {
-  color: #7d91b0;
+  color: #c8cdd6;
 }
 
 /*-----------------------------------Contact----------------------------------------*/
 
 #contact {
-  height: 400px;
-  width: 100%;
-  /* color: var(--second-bg-color); */
-  background: var(--);
-  background: var(--bg-oxford-blue);
+  background-color: var(--bg-oxford-blue);
+  padding: 4rem 0;
   text-align: center;
-      padding-top: 4rem;
 }
 
 #contact > div > p {
-  color: var(--secondary-color);
+  color: #fff;
+  margin-bottom: 1rem;
 }
 
 .contact_me {
@@ -572,7 +573,7 @@ span {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  margin-top: 50px;
+  margin-top: 2rem;
 }
 
 .contact_me > p > a > span {
@@ -580,11 +581,26 @@ span {
 }
 
 .contact_me > div {
-  margin-top: 20px;
+  margin-top: 1.5rem;
+}
+
+.contact_me > a {
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.contact_me > a:hover {
+  opacity: 0.7;
+}
+
+.contact_me > a > i {
+  font-size: 40px;
 }
 
 .contact_me > p {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
 .project-link {
@@ -643,6 +659,7 @@ span {
   flex-wrap: wrap;
   padding: 2rem 9%;
   background: var(--second-bg-color);
+
 }
 
 .footer-text p {

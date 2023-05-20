@@ -103,7 +103,7 @@ homeContent.style.width = '90%';
 // *===============================  typed js==================================
 
 const typed = new Typed('.multiple-text', {
-  strings: ['Full Stack Web Developer', 'Backend Developer', 'Frontend Developer'],
+  strings: ['Full Stack Web Developer', 'Backend Developer', 'Frontend Developer','Wordpress Developer'],
   typeSpeed: 100,
   backSpeed: 100,
   backdelay: 1000,
