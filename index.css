@@ -7,6 +7,7 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: var(--fontFamily-noto_sans);
+  
 }
 html {
   font-size: 62.5%;
@@ -17,6 +18,7 @@ body {
   background: var(--bg-oxford-blue-2);
   color: var(--text-color);
   /* color: var(--text-shadow-blue); */
+  overflow-x: hidden;
 }
 
 :root {
