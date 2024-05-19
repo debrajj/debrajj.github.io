@@ -46,7 +46,7 @@ menuIcon.addEventListener('click', function() {
 
     function NewTab() {
       window.open(
-        "https://drive.google.com/file/d/1bGlAI9_tb69bYWptzgqlhNRqy6_L2cfG/view?usp=sharing",
+        "https://drive.google.com/file/d/1V_dEqjvfNrNNlNNcBzV0MdblJuNoEfn6/view?usp=sharing",
         "_blank"
       );
     }
